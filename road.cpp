@@ -88,6 +88,8 @@ void mov (int direc, int a[20][47], int *x, int *y)
                 if(a[*x-1][*y]==0)
                 {
                     *x=*x-1;
+                    delay(1);
+                    system("clear");
                     printGame(a,x,y);
                 }
                 else
@@ -107,6 +109,8 @@ void mov (int direc, int a[20][47], int *x, int *y)
                 if(a[*x+1][*y]==0)
                 {
                     *x=*x+1;
+                    delay(1);
+                    system("clear");
                     printGame(a,x,y);
                 }
                 else
@@ -126,6 +130,8 @@ void mov (int direc, int a[20][47], int *x, int *y)
                 if(a[*x][*y-1]==0)
                 {
                     *y=*y-1;
+                    delay(1);
+                    system("clear");
                     printGame(a,x,y);
                 }
                 else
@@ -145,6 +151,8 @@ void mov (int direc, int a[20][47], int *x, int *y)
                 if(a[*x][*y+1]==0)
                 {
                     *y=*y+1;
+                    delay(1);
+                    system("clear");
                     printGame(a,x,y);
                 }
                 else
@@ -166,12 +174,16 @@ int comprobar (int direc, int a[20][47], int *x, int *y, bool *end)
        if(*x-1<0)
        {
            *end=true;
+           delay(1);
+           system("clear");
            printGAMEOVER();
            n=0;
        }
        else if(a[*x-1][*y]==3)
        {
           *end=true;
+           delay(1);
+           system("clear");
           printNEXT();
           n=1;
        }
@@ -185,12 +197,16 @@ int comprobar (int direc, int a[20][47], int *x, int *y, bool *end)
        if(*x+1>=21)
        {
            *end=true;
+           delay(1);
+           system("clear");
            printGAMEOVER();
            n=0;
        }
        else if(a[*x+1][*y]==3)
        {
           *end=true;
+           delay(1);
+           system("clear");
           printNEXT();
           n=1;
        }
@@ -204,12 +220,16 @@ int comprobar (int direc, int a[20][47], int *x, int *y, bool *end)
        if(*y-1<0)
        {
            *end=true;
+           delay(1);
+           system("clear");
            printGAMEOVER();
            n=0;
        }
        else if(a[*x][*y-1]==3)
        {
           *end=true;
+          delay(1);
+          system("clear");
           printNEXT();
           n=1;
        }
@@ -223,12 +243,16 @@ int comprobar (int direc, int a[20][47], int *x, int *y, bool *end)
        if(*y+1>=21)
        {
            *end=true;
+           delay(1);
+           system("clear");
            printGAMEOVER();
            n=0;
        }
        else if(a[*x][*y+1]==3)
        {
           *end=true;
+          delay(1);
+          system("clear");
           printNEXT();
           n=1;
        }
