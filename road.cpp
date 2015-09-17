@@ -81,7 +81,7 @@ void mov (int direc, int a[20][47], int *x, int *y)
             {
                 if(a[*x+1][*y]==0)
                 {
-                    *x=*x-1;
+                    *x=*x+1;
                     printGame(a,x,y);
                 }
                 else
@@ -262,9 +262,10 @@ void game(int *c, bool *end)
     if(*c==1)
     {
         printGame(level1,px1,py1);
-        while(end==false)
+        while(*end==false)
         {
-            cin>> direc;
+            cout<<"Ingrese la direccion: ";
+	    cin>> direc;
             mov(direc,level1,px1,py1);
             n=comprobar(direc,level1,px1,py1,end);
         }        
