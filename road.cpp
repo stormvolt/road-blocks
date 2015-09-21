@@ -104,8 +104,15 @@ void mov (int direc, int a[20][47], int *x, int *y)
                     stop=true;
                 }
             }
+            else
+            {
+                    stop=true;
+            } 
+            
         }    
     }
+
+
     else if(direc==2)
     {
         bool stop=false;
@@ -125,8 +132,15 @@ void mov (int direc, int a[20][47], int *x, int *y)
                     stop=true;
                 }
             }
+            else
+            {
+                    stop=true;
+            } 
+            
         }    
     }
+
+
     else if(direc==1)
     {
         bool stop=false;
@@ -146,8 +160,15 @@ void mov (int direc, int a[20][47], int *x, int *y)
                     stop=true;
                 }
             }
+            else
+            {
+                    stop=true;
+            } 
+            
         }    
     }
+
+
     else if(direc==3)
     {
         bool stop=false;
@@ -167,6 +188,11 @@ void mov (int direc, int a[20][47], int *x, int *y)
                     stop=true;
                 }
             }
+            else
+            {
+                    stop=true;
+            } 
+            
         }    
     }
 
